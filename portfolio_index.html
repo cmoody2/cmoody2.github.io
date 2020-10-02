@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--HEAD-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Christopher Moody">
+        <title>Chris M. | Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <!--BODY-->
+    <body class="background">
+
+        <!--NAVBAR-->
+        <div class="navbar">
+            <a class="active" href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#github">GITHUB</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+
+        <!--HOME-->
+            <br>
+            <br>
+        
+        <!--VIDEO-->
+        <div id="home">
+            <video autoplay muted loop id="code_video">
+                <source src="./video/video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+            <div class="video_text">
+                <h1 style="color:white;">Christopher A. Moody | Portfolio</h1>
+                    <p>
+                        <strong>
+                            <div class="opening_statement">
+                                <q>
+                                    What I love about both programming and music is that they enable you to build incredibly creative, complex, and beneficial things seemingly from thin air
+                                    <br>-- no additional materials required, just your brain and a keyboard in front of you.
+                                </q>
+                                    <br>- Peter Borum<br>
+                                    <br>
+                                    Welcome to my portfolio website! This is a central location for all of my projects as well as a brief background of myself.<br>
+                                    <br>Thank you for stopping by and enjoy!
+                            </div>
+                        </strong>
+                    </p>
+            </div>
+
+        <!--ABOUT SECTION-->
+            <div class="row" id="about">
+                <div class="column_2">     <!--LEFT COLUMN-->
+                    <img src="./images/headshot2.png" alt="Headshot">
+                </div>
+
+                <div class="column_1">     <!--RIGHT COLUMN-->
+                    <h1>About</h1>
+                    <p>Born and raised in Las Vegas, I started my working career in hospitality.<br>
+                        Computers and technology has been a hobby of mine for many years but in early 2020 I decide it was time I make it a career.<br><br>
+                        I am a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp.<br><br>
+                        I now have experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python and more.<br><br>
+                        I am a full-stack developer and look forward to becoming part of a inclusive, passionate, and goal oriented team that promotes the honing of personal skills through participation as a group.<br><br>
+                        <a href="#contact">Contact</a> me below!</p>
+                    </p>
+                </div>
+            </div>
+
+        <!--GITHUB SECTION-->
+            <div class="row" id="github">
+                <div class="column_1">    <!--LEFT COLUMN-->
+                    <h1>GitHub</h1>
+                        <p>You can view my coding projects on my GitHub profile here:<br><br>
+                        <a href="https://github.com/cmoody2" target="_blank">GitHub Pofile</a></p>
+                </div>
+
+                <div class="column_2">    <!--RIGHT COLUMN-->
+                    <a href="https://github.com/cmoody2" target="_blank"><img src="./images/GitHub-brave-hed-796x418.png" alt="GitHub"></a>
+                </div>
+            </div>
+
+        <!--CONTACT SECTION-->
+            <div class="row" id="contact">
+                <div class="column_3">    <!--LEFT COLUMN-->
+                    <img src="./images/contact_photo.png" alt="contact_photo">
+                </div>
+
+                <div class="column_1">
+                    <h1>Contact</h1>     <!--RIGHT COLUMN-->
+                        <form action="" method="GET">
+                            <label>Name:</label>
+                                <input type="text" placeholder="Please enter your name here">
+                            <label>Email:</label>
+                                <input type="text" id="email" name="email" placeholder="Please enter your email here">
+                            <label>Message:</label>
+                                <input type="text" id="message" name="message" placeholder="Please write your message here">
+                                <input type="submit" value="Submit">
+                        </form>
+                </div>
+            </div>
+
+        <!--FOOTER SECTION-->
+            <footer>
+                <p>
+                    &copy; Christopher A. Moody | Portfolio
+                </p>
+            </footer>
+
+    </body>
+</html>
