@@ -3,13 +3,12 @@
 
     <!--HEAD-->
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="author" content="Christopher Moody">
         <title>Chris M. | Portfolio</title>
         <link rel="shortcut icon" type="image/jpg" href="images/letter_m.png">
         <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="./js/main.js" defer></script>
     </head>
 
     <!--BODY-->
@@ -18,21 +17,22 @@
         <!--NAVBAR-->
         <div class="navbar">
             <a class="active" href="#home">HOME</a>
+            <a href="#slideshow">SLIDESHOW</a>
             <a href="#about">ABOUT</a>
             <a href="#github">GITHUB</a>
-            <a href="#contact">CONTACT</a>
+            <a onclick="openForm()" ondblclick="closeForm()">CONTACT</a>
         </div>
 
         <!--HOME-->
-            <br>
-            <br>
+        <div id="home">
+                <br>
+                <br>
         
         <!--VIDEO-->
-        <div id="home">
-            <video autoplay muted loop id="code_video">
-                <source src="./video/video.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
+                <video autoplay muted loop id="code_video">
+                    <source src="./video/video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
         </div>
 
         <!--VIDEO TEXT-->
@@ -46,17 +46,88 @@
                                 </q>
                                     <br>― Raghu Venkatesh<br>
                                     <br>
-                                    Welcome to my portfolio website! This is a central location for all of my projects as well as a brief background of myself.<br>
+                                    Welcome to my portfolio website! This is a central location for all of my projects 
+                                    <br>as well as a brief background of myself.<br>
                                     <br>Thank you for stopping by and enjoy!
                             </div>
                         </strong>
                     </p>
             </div>
 
+        <!--Slideshow section-->
+            <div id="slideshow">
+                <div id="slideshow_background">
+                    <div id="slideshow_container">
+
+                        <div class="mySlides fade">
+                            <div class="slide_number">1 / 7</div>
+                                <img class="slide_show_images" src="./images/headshot2.png" style="width: 100%;">
+                                    <div class="text">Your next potential team member!</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="slide_number">2 / 7</div>
+                                <img class="slide_show_images" src="./images/html_photo.png" style="width: 100%;">
+                                    <div class="text">I'm trained in HTML 5</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="slide_number">3 / 7</div>
+                                <img class="slide_show_images" src="./images/css3_photo.png" style="width: 100%;">
+                                    <div class="text">CSS 3</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="slide_number">4 / 7</div>
+                                <img class="slide_show_images" src="./images/js_photo.png" style="width: 100%;">
+                                    <div class="text">JavaScript</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="slide_number">5 / 7</div>
+                                <img class="slide_show_images" src="./images/python_photo.png" style="width: 100%;">
+                                    <div class="text">Python Programming Language</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="slide_number">6 / 7</div>
+                                <img class="slide_show_images" src="./images/sql_photo.png" style="width: 100%;">
+                                    <div class="text">SQL Database</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="slide_number">7 / 7</div>
+                                <img class="slide_show_images" src="./images/contact_photo.png" style="width: 100%;">
+                                    <div class="text">
+                                        <a onclick="openForm()" href="#contact" style="color: rgb(248, 248, 242);">Contact me!</a>
+                                    </div>
+                        </div>
+
+                            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                <br>
+
+                    <div style="text-align: center;">
+                    
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+
+                    </div>
+                </div>
+            </div>
+
+
         <!--ABOUT SECTION-->
             <div class="row" id="about">
                 <div class="column_2">     <!--LEFT COLUMN-->
-                    <img src="./images/headshot2.png" alt="Headshot">
+                    <img src="./images/las_vegas_photo.png" alt="Las Vegas Strip">
                 </div>
 
                 <div class="column_1">     <!--RIGHT COLUMN-->
@@ -85,23 +156,24 @@
             </div>
 
         <!--CONTACT SECTION-->
-            <div class="row" id="contact">
-                <div class="column_3">    <!--LEFT COLUMN-->
-                    <img src="./images/contact_photo.png" alt="contact_photo">
-                </div>
-
-                <div class="column_1">
-                    <h1>Contact</h1>     <!--RIGHT COLUMN-->
-                        <form action="" method="GET">
-                            <label>Name:</label>
-                                <input type="text" placeholder="Please enter your name here">
-                            <label>Email:</label>
-                                <input type="text" id="email" name="email" placeholder="Please enter your email here">
-                            <label>Message:</label>
-                                <input type="text" id="message" name="message" placeholder="Please write your message here">
-                                <input type="submit" value="Submit">
+            <div id="contact">
+                <button onclick="openForm()" class="pop_up_button"> Contact </button>
+                    <div class="form-popup" id="myForm">
+                        <form action="" method="POST" class="form-container">
+                            <h1>Contact</h1>
+                                <label for="name"><b>Name</b></label>
+                                    <input type="text" placeholder="Type your name here" name="name" required>
+                                <label for="phone"><b>Phone</b></label>
+                                    <input type="text" placeholder="Enter your phone number here" name="phone">
+                                <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Type your email address here" name="email" required>
+                                <label for="message"><b>Message</b></label>
+                                    <input type="text" placeholder="Type your message here" name="message">
+                            
+                            <button type="submit" class="btn">SUBMIT</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                         </form>
-                </div>
+                    </div>
             </div>
 
         <!--FOOTER SECTION-->
@@ -110,6 +182,8 @@
                     &copy; Christopher A. Moody | Portfolio
                 </p>
             </footer>
+
+            <script src="./js/main.js" defer></script>
 
     </body>
 </html>
