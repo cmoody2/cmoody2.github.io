@@ -8,7 +8,6 @@
         <title>Chris M. | Portfolio</title>
         <link rel="shortcut icon" type="image/jpg" href="images/letter_m.png">
         <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
-        <script src="./js/main.js" defer></script>
     </head>
 
     <!--BODY-->
@@ -31,7 +30,7 @@
         <!--VIDEO-->
                 <video autoplay muted loop id="code_video">
                     <source src="./video/video.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
+                    There was an error loading this video.
                 </video>
         </div>
 
@@ -60,43 +59,51 @@
                     <div id="slideshow_container">
 
                         <div class="mySlides fade">
-                            <div class="slide_number">1 / 7</div>
+                            <div class="slide_number">1 / 8</div>
                                 <img class="slide_show_images" src="./images/headshot2.png" style="width: 100%;">
                                     <div class="text">Your next potential team member!</div>
                         </div>
 
                         <div class="mySlides fade">
-                            <div class="slide_number">2 / 7</div>
+                            <div class="slide_number">2 / 8</div>
                                 <img class="slide_show_images" src="./images/html_photo.png" style="width: 100%;">
-                                    <div class="text">I am currently trained in HTML5</div>
+                                    <div class="text">HTML5</div>
                         </div>
 
                         <div class="mySlides fade">
-                            <div class="slide_number">3 / 7</div>
+                            <div class="slide_number">3 / 8</div>
                                 <img class="slide_show_images" src="./images/css3_photo.png" style="width: 100%;">
                                     <div class="text">CSS3</div>
                         </div>
 
                         <div class="mySlides fade">
-                            <div class="slide_number">4 / 7</div>
+                            <div class="slide_number">4 / 8</div>
                                 <img class="slide_show_images" src="./images/js_photo.png" style="width: 100%;">
                                     <div class="text">JavaScript</div>
                         </div>
 
                         <div class="mySlides fade">
-                            <div class="slide_number">5 / 7</div>
+                            <div class="slide_number">5 / 8</div>
                                 <img class="slide_show_images" src="./images/python_photo.png" style="width: 100%;">
                                     <div class="text">Python Programming Language</div>
                         </div>
 
                         <div class="mySlides fade">
-                            <div class="slide_number">6 / 7</div>
+                            <div class="slide_number">6 / 8</div>
                                 <img class="slide_show_images" src="./images/sql_photo.png" style="width: 100%;">
                                     <div class="text">SQL Database</div>
                         </div>
 
                         <div class="mySlides fade">
-                            <div class="slide_number">7 / 7</div>
+                            <div class="slide_number">7 / 8</div>
+                                <img class="slide_show_images" src="./images/django_photo.png" style="width: 100%;">
+                                    <div class="text">
+                                        <a onclick="openForm()" href="#contact" style="color: rgb(248, 248, 242);">Django web framework</a>
+                                    </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="slide_number">8 / 8</div>
                                 <img class="slide_show_images" src="./images/contact_photo.png" style="width: 100%;">
                                     <div class="text">
                                         <a onclick="openForm()" href="#contact" style="color: rgb(248, 248, 242);">Contact me!</a>
@@ -118,6 +125,7 @@
                         <span class="dot" onclick="currentSlide(5)"></span>
                         <span class="dot" onclick="currentSlide(6)"></span>
                         <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
 
                     </div>
                 </div>
@@ -133,48 +141,70 @@
                 <div class="column_1">     <!--RIGHT COLUMN-->
                     <h1>About</h1>
                     <p>Born and raised in Las Vegas, I started my working career in hospitality.<br>
-                        Computers and technology has been a hobby of mine for many years but in early 2020 I decide it was time I make it a career.<br><br>
+                        Computers and technology has been a hobby of mine for many years but in early 2020 I decided it was time I make it a career.<br><br>
                         I am a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp.<br><br>
-                        I now have experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python and more.<br><br>
-                        I am a full-stack developer and look forward to becoming part of a inclusive, passionate, and goal oriented team that promotes the honing of personal skills through participation as a group.<br><br>
+                        I look forward to becoming part of a inclusive, passionate, and goal oriented team that promotes the honing of personal skills through<br> participation as a group.<br><br>
                         <a href="#contact">Contact</a> me below!</p>
                     </p>
                 </div>
             </div>
 
+        <!--SKILLS SECTION-->
+        <div class="row" id="skills">
+            <div class="column_1">
+                <h1>Skills & Experience</h1>
+                <p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>SQL (SQL Server and SQLite)</li>
+                        <li>Django</li>
+                        <li>Tkinter</li>
+                        <li>Bootstrap</li>
+                        <li>Jquery</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="column_2">
+                <img src="./images/skills_photo2.png" alt="Software Developement">
+            </div>
+        </div>
+        <!--SKILLS SECTION-->
+
         <!--GITHUB SECTION-->
             <div class="row" id="github">
-                <div class="column_1">    <!--LEFT COLUMN-->
+                <div class="column_2">    <!--LEFT COLUMN-->
+                    <a href="https://github.com/cmoody2" target="_blank"><img src="./images/GitHub-brave-hed-796x418.png" alt="GitHub"></a>
+                </div>
+
+                <div class="column_1">    <!--RIGHT COLUMN-->
                     <h1>GitHub</h1>
                         <p>You can view my coding projects on my GitHub profile here:<br><br>
                         <a href="https://github.com/cmoody2" target="_blank">GitHub Pofile</a></p>
                 </div>
-
-                <div class="column_2">    <!--RIGHT COLUMN-->
-                    <a href="https://github.com/cmoody2" target="_blank"><img src="./images/GitHub-brave-hed-796x418.png" alt="GitHub"></a>
-                </div>
             </div>
 
         <!--CONTACT SECTION-->
-            <div id="contact">
-                <button onclick="openForm()" class="pop_up_button"> Contact </button>
-                    <div class="form-popup" id="myForm">
-                        <form action="https://formspree.io/f/xbjpgveq" method="POST" class="form-container">
-                            <h1>Contact</h1>
-                                <label for="name"><b>Name</b></label>
-                                    <input type="text" placeholder="Type your name here" name="name" required>
-                                <label for="phone"><b>Phone</b></label>
-                                    <input type="text" placeholder="Enter your phone number here" name="phone">
-                                <label for="email"><b>Email</b></label>
-                                    <input type="text" placeholder="Type your email address here" name="email" required>
-                                <label for="message"><b>Message</b></label>
-                                    <input type="text" placeholder="Type your message here" name="message">
-                            
-                            <button type="submit" class="btn">SUBMIT</button>
-                            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                        </form>
-                    </div>
-            </div>
+            <button onclick="openForm()" class="pop_up_button">Contact</button>
+                <div class="form-popup" id="myForm">
+                    <form action="https://formspree.io/f/xbjpgveq" method="POST" class="form-container">
+                        <h1>Contact</h1>
+                            <label for="name"><b>Name</b></label>
+                                <input type="text" placeholder="Type your name here" name="name" required>
+                            <label for="phone"><b>Phone</b></label>
+                                <input type="text" placeholder="Enter your phone number here" name="phone">
+                            <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Type your email address here" name="email" required>
+                            <label for="message"><b>Message</b></label>
+                                <input type="text" placeholder="Type your message here" name="message">
+                        
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    </form>
+                </div>
 
         <!--FOOTER SECTION-->
             <footer>
