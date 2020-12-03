@@ -280,7 +280,7 @@ body.fade-out {
 h1 {
     text-transform: uppercase;
     font-family: 'RobotoMono', monospace, Arial;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
     margin-top: 3%;
     color: #f8f8f2;
@@ -298,8 +298,19 @@ P {
     padding-right: 1vw;
 }
 
+
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 10px; 
+}
+
 .opening_statement {
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
 /*=========================================
@@ -316,7 +327,7 @@ a {
 q {
     font-style: italic;
     font-weight: lighter;
-    font-size: 1.9vw;
+    font-size: 1.4vw;
 }
 
 /*==========================================
@@ -344,7 +355,10 @@ img {
 .pop_up_button {
     bottom: 1.75vw;
     right: 1.75vw;
-    width: 25vw;
+    width: 10vw;
+    height: 2vw;
+    padding: 1px 2px;
+    font-size: 1vw;
     background-color: white;
     color: black;
     border: solid;
@@ -436,6 +450,11 @@ p:hover {
     transform: scale(1.02);
 }
 
+ul:hover {
+    transition: transfrom 1s ease-in-out;
+    transform: scale(1.02); 
+}
+
 h1:hover {
     font-weight: normal;
 }
@@ -446,10 +465,6 @@ img:hover {
     transform: scale(1.1);
 }
 
-.opening_statement:hover {
-    transition: transform 1s ease-in-out;
-    transform: scale(1.01);
-}
 
 /*===============================================
     FOOTER ELEMENTS
