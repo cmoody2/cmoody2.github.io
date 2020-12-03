@@ -459,11 +459,12 @@ h1:hover {
     font-weight: normal;
 }
 
-img:hover {
+/* Removing hover effects for the moment, too distracting*/
+/* img:hover {
     filter: grayscale(50%);
     transition: transform 1s ease-in-out;
     transform: scale(1.1);
-}
+} */
 
 
 /*===============================================
