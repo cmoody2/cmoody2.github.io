@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    src: url('./fonts/PoiretOne-Regular.ttf');
+    font-family: 'Poiret One', cursive;
+}
+
+@font-face {
     src: url(./fonts/RobotoMono-VariableFont_wght.ttf);
     font-family: "RobotoMono";
 }
@@ -286,6 +291,15 @@ h1 {
     color: #f8f8f2;
 }
 
+#mechkeyboard-header {
+    text-transform: uppercase;
+    font-family: 'Poiret One', monospace, Arial;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 3%;
+    color: #f8f8f2;
+}
+
 /*========================================
     PARAGRAPH ELEMENTS
 ==========================================*/
@@ -319,6 +333,15 @@ li {
 a {
     color: #8be9fd;
     text-decoration: none;
+}
+
+#code-summary-link {
+    text-decoration: none;
+}
+
+#insta-photo-link {
+    width: 35px;
+    height: 35px;
 }
 
 /*=========================================

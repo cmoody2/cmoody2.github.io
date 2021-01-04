@@ -8,6 +8,8 @@
         <title>Chris M. | Portfolio</title>
         <link rel="shortcut icon" type="image/jpg" href="images/letter_m.png">
         <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     </head>
 
     <!--BODY-->
@@ -19,7 +21,6 @@
             <a href="#slideshow">SLIDESHOW</a>
             <a href="#about">ABOUT</a>
             <a href="#github">GITHUB</a>
-            <a onclick="openForm()" ondblclick="closeForm()">CONTACT</a>
         </div>
 
         <!--HOME-->
@@ -131,6 +132,34 @@
             </div>
 
 
+        <!--PROJECTS SECTION-->
+        <div class="row" id="projects">
+            <div class="column_1">
+                <h1 id="mechkeyboard-header">MechKeyboards</h1>
+                <p>
+                    A tool built to keep track of your keyboard collection<br>
+                    and a central place for resources related to the mechnical keyboard hobby<br><br>
+                    <a id="code-summary-link" href="https://github.com/cmoody2/Live_Project_Code_Summary" target="_blank">Full code summary here for more information</a>
+                </p>
+                <p>
+                    <ul>
+                        Created using
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Django Web Developement Framework</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="column_2">
+                <img src="./images/website_home_page.png" alt="Software Developement">
+            </div>
+        </div>
+        <!--SKILLS SECTION-->
+
+
         <!--ABOUT SECTION-->
             <div class="row" id="about">
                 <div class="column_2">     <!--LEFT COLUMN-->
@@ -140,10 +169,11 @@
                 <div class="column_1">     <!--RIGHT COLUMN-->
                     <h1>About Me</h1>
                     <p>Born and raised in Las Vegas, I started my working career in hospitality.<br>
-                        Computers and technology has been a hobby of mine for many years but in early 2020 I decided it was time I make it a career.<br><br>
+                        While growing up, I spent much of my time fiddling with computers, video game consoles and the like but I never ventured into the software behind them.<br><br>
+                        In 2019 I had finally found my introduction into software development through the editing of .hex files from a github repo for mechanical keyboards and<br>I've been hooked ever since.<br><br>
                         I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp.<br><br>
-                        I look forward to becoming part of a inclusive, passionate, and goal oriented team that promotes the honing of personal skills through<br> participation as a group.<br><br>
-                        <a href="#contact">Contact</a> me below!</p>
+                        In my free time you can usually find me researching or building<br>custom mechanical keyboards.<br>
+                        I also enjoy indoor bouldering, cycling and pc gaming.<br<br>
                     </p>
                 </div>
             </div>
@@ -159,10 +189,11 @@
                         <li>JavaScript</li>
                         <li>Python</li>
                         <li>SQL (SQL Server and SQLite)</li>
-                        <li>Django</li>
+                        <li>Django Web Developement Framework</li>
                         <li>Tkinter</li>
                         <li>Bootstrap</li>
                         <li>Jquery</li>
+                        <li>Agile software development</li>
                     </ul>
                 </p>
             </div>
@@ -181,7 +212,7 @@
 
                 <div class="column_1">    <!--RIGHT COLUMN-->
                     <h1>GitHub</h1>
-                        <p>You can view my coding projects on my GitHub profile here:<br><br>
+                        <p>To view all of my coding projects please visit my GitHub profile here<br><br>
                         <a href="https://github.com/cmoody2" target="_blank">GitHub Pofile</a></p>
                 </div>
             </div>
@@ -208,8 +239,7 @@
         <!--FOOTER SECTION-->
             <footer>
                 <p>
-                    &copy; Christopher A. Moody | Portfolio
-                </p>
+                    &copy; Christopher A. Moody | Portfolio<span><a href="https://www.instagram.com/christopher_am/" target="_blank"><img id="insta-photo-link" src="./images/insta-logo.png" alt="Instagram"></a></span>
             </footer>
 
             <script src="./js/main.js" defer></script>
