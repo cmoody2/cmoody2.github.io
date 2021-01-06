@@ -261,7 +261,7 @@ body.fade-out {
     width: 50%;
     padding: 10px;
     padding-top: 3vw;
-    height: 38vw;
+    height: 40vw;
     background-color: #44475a;
 }
 
@@ -270,7 +270,7 @@ body.fade-out {
     width: 50%;
     padding: 10px;
     padding-top: 7.5vw;
-    height: 38vw;
+    height: 40vw;
     background-color: #282a36;
 }
 
@@ -297,7 +297,7 @@ h1 {
     font-family: 'RobotoMono', monospace, Arial;
     font-size: 2vw;
     text-align: center;
-    margin-top: 2vw;
+    margin-top: 3vw;
     color: #f8f8f2;
 }
 
