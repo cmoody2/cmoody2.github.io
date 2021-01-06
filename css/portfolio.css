@@ -378,12 +378,31 @@ q {
     display: block;
 }
 
-.media-link {
+.container-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-link-git {
     margin-top: 8px;
     margin-left: auto;
     margin-right: auto;
+    width: 5vw;
+    height: 5vw;
+}
+
+.media-link-insta {
+    margin: 0px 8px;
+    width: 3vw;
+    height: 3vw;
+}
+
+.media-link-linkedin {
+    margin: 0px 8px;
     width: 4vw;
-    height: 4vw;
+    height: 3vw;
 }
 
 /*==========================================
