@@ -405,6 +405,12 @@ q {
     height: 3vw;
 }
 
+.media-link-resume{
+    margin-right: 1px;
+    width: 4vw;
+    height: 3.5vw;
+}
+
 /*==========================================
     CONTACT FORM BUTTON
 ============================================*/
